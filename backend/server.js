@@ -10,11 +10,7 @@ connectDB();
 
 const app = express();
 
-app.use(
-  cors({
-    origin: "https://atmapplication-rcrq.vercel.app",
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
